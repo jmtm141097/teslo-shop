@@ -7,6 +7,7 @@ export class SeedController {
 
     @Get()
     executeSeed() {
-        return this.seedService.runSeed()
+        if (this.seedService.runSeed()) return 'SEED EXECUTED'
+        return 'SEED FAIL'
     }
 }

@@ -11,3 +11,5 @@
 5. Levantar la base de datos
    `docker-compose up -d`
 6. Levantar: `yarn start:dev`
+7. Ejecutar el SEED
+   `GET localhost:3304/api/seed`
