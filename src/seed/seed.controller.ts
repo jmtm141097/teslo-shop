@@ -7,7 +7,6 @@ export class SeedController {
     constructor(private readonly seedService: SeedService) {}
 
     @Get()
-    @Auth()
     executeSeed() {
         if (this.seedService.runSeed()) return 'SEED EXECUTED'
         return 'SEED FAIL'
